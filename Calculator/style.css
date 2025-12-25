@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #7e767c;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#main-container {
+    background: #000;
+    border-radius: 30px;
+    padding: 25px;
+    width: 360px;
+    box-shadow:
+        20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+}
+
+#main-box {
+    background: #000;
+    color: #fff;
+    font-size: 2.8rem;
+    padding: 25px 15px; 
+    min-height: 100px;
+    display: flex;
+    align-items: center; 
+    overflow-x:hidden;
+    font-family: 'SF Pro Text', -apple-system, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+.general-btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.main-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.operations {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.gbutn,
+.butn,
+.obutn {
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+    color: white;
+    height: 65px;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s ease;
+    user-select: none;
+}
+
+.gbutn:active,
+.butn:active,
+.obutn:active {
+    transform: scale(0.92);
+    opacity: 0.8;
+}
+
+/* Gray buttons (C, +/-, %, ÷) */
+.gbutn {
+    background: #01a39d;
+    color: #000;
+    font-size: 1.3rem;
+}
+
+.gbutn:hover {
+    background: #b5b5b5;
+}
+
+/* Dark gray buttons (7, 8, 9, ×, 4, 5, 6, -, 1, 2, 3, +) */
+.butn {
+    background: #333;
+    font-size: 1.5rem;
+}
+
+.butn:hover {
+    background: #444;
+}
+
+/* Orange buttons (÷, ×, -, +, =) */
+.obutn {
+    background: #880707;
+    font-size: 1.7rem;
+}
+
+.obutn:hover {
+    background: #940f05;
+}
+
+/* Special button styles */
+#btn-C {
+    font-size: 1.3rem;
+}
+
+#btn-dot {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#btn-0 {
+    width: 140px;
+    border-radius: 35px;
+    grid-column: span 2;
+    justify-content: flex-start;
+    padding-left: 25px;
+}
+
+#btn-equal {
+    background: #b90aff;
+    font-size: 1.7rem;
+    transform: translateX(175%);
+}
+
+#btn-equal:hover {
+    background: #9b0c0c;
+}
+
+/* Specific operator button colors */
+#div,
+#mult,
+#sub,
+#sum {
+    background: #31810a;
+}
+
+#div:hover,
+#mult:hover,
+#sub:hover,
+#sum:hover {
+    background: #9c0707;
+}
+
+/* Button text colors */
+.gbutn {
+    color: #000;
+}
+
+.butn,
+.obutn,
+#btn-equal {
+    color: #fff;
+}
+
+/* Zero button special positioning */
+#btn-0 .butn {
+    justify-content: center;
+    padding-left: 25px;
+}

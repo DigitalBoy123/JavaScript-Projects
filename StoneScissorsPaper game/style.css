@@ -1,0 +1,154 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    align-items: center;
+    flex-direction: column;
+    display: flex; 
+    overflow: hidden;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+#main-head {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(8, 8, 66);
+    color: white;
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    line-height: 4rem;
+}
+
+
+#images-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.image img {
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+}
+
+.image:hover {
+    background-color: rgb(8, 8, 66);
+}
+
+#scores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.your-score,
+.comp-score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.your-score h1,
+.comp-score h1 {
+    font-size: 4rem;
+}
+
+.your-score h2,
+.comp-score h2 {
+    font-size: 1.5rem;
+}
+
+#last-head {
+    text-align: center;
+    background-color: rgb(8, 8, 66);
+    padding: 15px 1rem;
+    border-radius: 15px;
+    display: inline-block;
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 590px) {
+
+    #images-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center; 
+        gap: 1rem;
+    }
+
+    #images-section #rock { 
+        grid-column: 1 / span 2;  
+    }
+
+
+    #main-head {
+        font-size: 1.5rem;
+        height: 3rem;
+        line-height: 3rem;
+        width: 100%;
+    }
+
+    .image {
+        height: 145px;
+        width: 145px;
+        border-radius: 50%;
+    }
+
+    .image img {
+        object-fit: cover;
+        border-radius: 50%;
+        cursor: pointer;
+        height: 130px;
+        width: 130px;
+    }
+
+    #scores {
+        gap: 1.5rem;
+    }
+
+    .your-score,
+    .comp-score {
+        gap: 0.5rem;
+    }
+
+    .your-score h1,
+    .comp-score h1 {
+        font-size: 3rem;
+    }
+
+    .your-score h2,
+    .comp-score h2 {
+        font-size: 1rem;
+    }
+
+    #last-head {
+        padding: 12px 1rem;
+        display: inline-block;
+        font-size: 1rem;
+    }
+
+}
