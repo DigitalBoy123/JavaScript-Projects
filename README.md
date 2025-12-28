@@ -67,3 +67,4 @@ This repository is designed to be scalable. To add a new project:
 2.  Include the core files (`index.html`, `style.css`, `script.js`).
 3.  Add a `README.md` specific to that project.
 4.  Update the **Project Showcase** table in this file with the new entry.
+ 
