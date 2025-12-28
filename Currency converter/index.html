@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Currency Converter</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Currency Converter</h1>
+        <form id="currency-form">
+            <div class="amount-ent">
+                <label for="amount">Enter Amount</label>
+                <input type="text" value="1" placeholder="Enter your amount" id="amount">
+            </div>
+
+            <div class="exchange-area">
+                <div class="from">
+                    From
+                    <div class="dropdown">
+                        <img src="https://flagsapi.com/BE/flat/64.png" alt="flag image">
+                        <select name="selection" id="from-sel"></select>
+                    </div>
+                </div>
+
+                <div class="exch-icon">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </div>
+
+                <div class="to">
+                    To
+                    <div class="dropdown">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="flag image">
+                        <select name="selection" id="to-sel"></select>
+                    </div>
+
+                </div>
+            </div>
+            <p id="main-rate">1 USD = 280 PKR</p>
+            <button type="submit" class="submit-btn">Get exchange rate</button>
+        </form>
+    </div>
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

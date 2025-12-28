@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(4, 229, 245, 0.685);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: white;
+    padding: 2rem; 
+    gap: 1rem;
+}
+
+.amount-ent input {
+    border: 1px solid darkgray;
+    border-radius: 0.8rem;
+    outline: none;
+    padding: 0.9rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    width: 100%; 
+}
+
+.exchange-area {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 2rem;
+}
+
+.dropdown {
+    border-radius: 1rem;
+    background-color: antiquewhite;
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+
+.dropdown img {
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.dropdown select {
+    border: 1px solid darkgray;
+    border-radius: 0.6rem;
+    padding: 6px 10px;
+    outline: none; 
+    font-size: 0.9rem;
+}
+
+#main-rate {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 1.9rem 0;
+    text-align: center;;
+    border: 2px solid darkgray;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+button {
+    border: none;
+    background-color: rgb(55, 250, 6);
+    border-radius: 0.7rem;
+    padding: 0.9rem 1.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;  
+    display: block;
+    margin: 0 auto; 
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .exchange-area {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .dropdown {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .dropdown img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
