@@ -142,7 +142,40 @@ body {
     color: rgb(0, 0, 0);
 }
 
-@media screen and (max-width: 450px) {
+
+@media screen and (max-width: 980px) {
+    .list-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        overflow: hidden;
+    }
+
+    .list-card {
+        gap: 2rem;
+        width: 410px;
+        padding: 1.7rem;
+        margin: 5rem 0;
+    }
+
+    #hero {
+        font-size: 6.5rem;
+        line-height: 1.1;
+        width: 34rem;
+        text-align: center;
+        color: #ffffff;
+        letter-spacing: -1.5px;
+        margin-top: 2rem;
+    }
+
+    #hero span {
+        color: rgb(0, 0, 0);
+    }
+}
+
+@media screen and (max-width: 450px) { 
     .list-container {
         display: flex;
         justify-content: center;
@@ -160,7 +193,7 @@ body {
     }
 
     #hero {
-        font-size: 3.5rem; 
+        font-size: 3.5rem;
         line-height: 1.1;
         width: 18rem;
         text-align: center;
