@@ -13,6 +13,7 @@ Here are the projects currently featured in this repository.
 | **✂️ Rock Paper Scissors** | The classic game vs. computer! Includes score tracking, random logic, and dynamic DOM updates. | JS (Event Handling), CSS Animations | [Play Game 🎮](https://scissorgame.netlify.app/) |
 | **🧠 Quiz App** | A multiple-choice quiz platform with real-time scoring and immediate feedback. | JS (ES6 Modules), Array Methods | [Start Quiz 📝](https://quizsession.netlify.app/) |
 | **🧮 Calculator** | A sleek, neumorphic calculator for basic arithmetic with input validation. | JS (Logic), CSS Grid/Flexbox | [Calculate 🔢](https://calculator210o.netlify.app/) |
+| **📝 To-Do List** | A task management app with local storage persistence for adding, viewing, and deleting tasks. | JS (localStorage), CSS Flexbox | [Manage Tasks 📋](https://todolist21884.netlify.app/) |
 
 ## 🏗️ Repository Structure & Standards
 

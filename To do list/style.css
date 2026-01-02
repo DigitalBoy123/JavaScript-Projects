@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Professional soft gradient */
+    background: linear-gradient(135deg, #002e81 0%, #66b11e 100%);
+}
+
+.list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.list-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    min-height: 70vh;
+    width: 420px;
+    /* Fixed width to prevent stretching with text */
+    margin: 0 2rem;
+    background-color: #f7b5b5;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    /* Soft shadow instead of black border */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.list-card h1 {
+    align-self: center;
+    color: #2d3436;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.task-area label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.task-area input {
+    border: 1px solid #dfe6e9;
+    border-radius: 0.6rem;
+    outline: none;
+    width: 100%;
+    /* Changed from min-width to occupy container space */
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+.task-area input:focus {
+    border-color: rgb(16, 54, 124);
+}
+
+.task-area #addtxt-btn {
+    background-color: rgb(16, 54, 124);
+    border: none;
+    border-radius: 0.7rem;
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    /* Makes button look more professional in the layout */
+}
+
+.add-cont {
+    align-self: stretch;
+    /* Makes task list take full width of card */
+    margin-top: 1rem;
+}
+
+.tasks-added {
+    gap: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f2f6;
+    padding: 0.5rem;
+    margin-bottom: 0.8rem;
+    border-radius: 0.8rem;
+}
+
+.tasks-added .old-task {
+    border-radius: 0.5rem;
+    padding: 0.6rem 0.6rem 0.6rem 2.2rem;
+    position: relative;
+    font-size: 0.95rem;
+    color: #2d3436;
+    /* Logic: Prevents text from breaking the card */
+    word-break: break-word;
+    flex-grow: 1;
+}
+
+.tasks-added .old-task::before {
+    content: "🎯";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tasks-added .del-task {
+    background-color: #7c0808;
+    border: none;
+    border-radius: 0.6rem;
+    padding: 0.7rem 1.4rem;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#hero {
+    font-size: 5.8rem;
+    font-weight: 800;
+    line-height: 1.1;
+    width: 30rem;
+    color: #ffffff;
+    letter-spacing: -1.5px;
+}
+
+#hero span {
+    color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 450px) {
+    .list-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        overflow: hidden;
+    }
+
+    .list-card {
+        gap: 1.5rem;
+        width: 350px;
+        padding: 1.5rem;
+        margin: 5rem 0;
+    }
+
+    #hero {
+        font-size: 3.5rem; 
+        line-height: 1.1;
+        width: 18rem;
+        text-align: center;
+        color: #ffffff;
+        letter-spacing: -1.5px;
+        margin-top: 2rem;
+    }
+
+    #hero span {
+        color: rgb(0, 0, 0);
+    }
+}
